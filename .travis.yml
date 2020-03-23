@@ -1,18 +1,19 @@
 language: node_js
 node_js:
-  - "node"
+- node
 cache:
-  - yarn
+- yarn
 install:
-  - yarn install
+- yarn install
 script:
-  - yarn build
+- yarn build
 deploy:
   provider: s3
-  access_key_id: "AKIAXKZ6AV6CBBOSCFXD"
-  secret_access_key: "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"
+  access_key_id: AKIAXKZ6AV6CBBOSCFXD
   skip_cleanup: true
   local_dir: build
-  default_text_charset: "utf-8"
-  bucket: "michael-static-react-scribbler"
+  default_text_charset: utf-8
+  bucket: michael-static-react-scribbler
   region: us-east-1
+  secret_access_key:
+    secure: p5Wb05zMoW9Mgpu0wLYgwLV90AAsxS3JyzsZnZjrHAJE9vLvSjH7iqAyR7mrquykwH/I/G8xT8kvtXgEf/S+wy0/MOgEx2s9dkO7A71NR05HIBsIhkuF+HKgs9zYrzJ24Nf2UNITuvk2yz/5XO1NWXkBEddm6Gl9bxkdC5JJdMuFHRXa0Qb2b1kJqOwcdGm7ENHOhWPfd+WTDBe5MJdtBI4/8nxGiKhSycWkit9JqnVO0rxIAXmMgTn0kEipyZGhKf2yn8kPIUb4qcW04ax4nzWHcRy/wOvqzUsNj9sL7lqhMxvb+FxpWWndzp/nX9Z/cA7dY4b1XdCfBLA/QButM5EE9rr9eLbjMM9KdhLxhMremisXsNC4UXwVGoUAKt6XGV/SbbilwFlOJOnfAAHCpQJPIXORKrzqfVPUEll1kEsXAfgCPn3/nhuZMbZkkVq3KErQ3nLhAj4egMI5UkM9RDibVVEbF5fO9Dn9zB4ps+g+AadlxQ5avXEp0PaxLobU2Mc4ElwM0AePVLOFhFqv2XeRUpGhdG6oQfrkbbiFtIZ3rW0DrJt/VwaZ7LrF6AsGAlhJEwUyPa+E4BMFGaMd/GG6emfVNA/GmMMhINEFHu5A4b5HA5s5ddi4LWVblpCmfqK62TEK4zIzT2ourKYxGuGHzRtzIKWmJOyhqoxu6uQ=
