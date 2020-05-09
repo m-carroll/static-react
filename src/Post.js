@@ -2,7 +2,14 @@ import { Component } from 'react';
 
 class Post extends Component {
     render() {
-      return ('POST');
+        return (
+          <div>
+            <p>HERE</p>
+            <p>IS</p>
+            <p>POST</p>
+            <p>PAGE</p>
+          </div>
+        )
     }
   }
   
